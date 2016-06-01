@@ -1,0 +1,12 @@
+D:\Programming\Projects\Part2\Part2\bin\Debug\Part2.exe.config
+D:\Programming\Projects\Part2\Part2\bin\Debug\Part2.exe
+D:\Programming\Projects\Part2\Part2\bin\Debug\Part2.pdb
+D:\Programming\Projects\Part2\Part2\obj\Debug\Part2.exe
+D:\Programming\Projects\Part2\Part2\obj\Debug\Part2.pdb
+D:\Programming\Projects\Part2\Part2\obj\Debug\Part2.csprojResolveAssemblyReference.cache
+D:\Work\Course 3\Practice\Part2\Part2\bin\Debug\Part2.exe.config
+D:\Work\Course 3\Practice\Part2\Part2\obj\Debug\Part2.exe
+D:\Work\Course 3\Practice\Part2\Part2\obj\Debug\Part2.pdb
+D:\Work\Course 3\Practice\Part2\Part2\bin\Debug\Part2.exe
+D:\Work\Course 3\Practice\Part2\Part2\bin\Debug\Part2.pdb
+D:\Work\Course 3\Practice\Part2\Part2\obj\Debug\Part2.csprojResolveAssemblyReference.cache
