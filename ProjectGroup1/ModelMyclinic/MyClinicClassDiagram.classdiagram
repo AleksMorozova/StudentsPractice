@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="bcba7802-45cd-44c8-83d0-3b9898894c33" name="MyClinicClassDiagram" linkedPackageId="866b6cd1-5b3e-445f-a57f-26bc5a05e8f3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="276b4885-9f46-4e6c-b91a-e13030fb6427" name="Clinic" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8ad6078f-7cc8-41fa-9cc1-5da7e946b30f" />
+        <targetEnds>
+          <association Id="bebfa194-9357-4c9a-9980-02a7ce91dd25" isDerived="false" sourceEndRoleName="Clinic" targetEndRoleName="Insurance" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e7425c90-2dd3-498e-b68e-dd7c2e869b56" LastKnownName="Insurance" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="82215cdf-f25c-4d2e-8d66-ad91ad50a374" name="Clinic" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="51bce7ef-029a-4a8e-b559-77a26668ae22" name="Lower" value="*">
+                      <elementDefinition Id="45f23938-09f2-4b11-bd92-12048126daf7" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="b2e762e3-f577-4f26-99c9-61082fe95adb" name="Upper" value="*">
+                      <elementDefinition Id="cfb959ab-e34c-4891-b190-fdfa7b55e46a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="a0522c9d-c0c4-4cad-b22e-54f12102a93b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c25076a2-02ea-402d-9ce3-1cb71db42e5e" name="Insurance" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="cd3d893c-0905-4b3f-b1ef-42b56b83ba1e" name="Lower" value="*">
+                      <elementDefinition Id="297a96ce-73f1-432c-a081-970bf9b60de8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="e2c23770-69d0-474d-a3d5-78c8df2bc149" name="Upper" value="*">
+                      <elementDefinition Id="ca133504-cb42-4d84-a044-95a9c10fe07d" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="095b33f0-e1b2-4d66-8644-a28c85c5ef85" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7bdad249-af13-44b1-a750-fe71f467fda3" />
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property Id="9f04f25b-531d-45e2-a591-156ff606f4c2" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9f80758f-c0cd-41d0-83c1-e3d5e1764b23" />
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation Id="50f6dc93-f47e-4580-8130-a6fca495c790" name="GoRegistry" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4954d32e-421b-4f14-8337-7d43c692756a" />
+          </operation>
+          <operation Id="3d4bbbb9-6417-4209-8ef8-f400fbe896e3" name="GetInsuranceAnsver" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9b7a7295-6e11-494b-bffe-935d6e0df95f" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="42db6be5-52e0-4af5-8831-eb5fc740d142" name="Registry" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4ad799f9-7b7e-4b26-bdbe-4b05bf73932c" />
+        <targetEnds>
+          <association Id="ce91008a-7c06-42fb-b335-276fc0b3f6d2" isDerived="false" sourceEndRoleName="Registry" targetEndRoleName="Clinic" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="276b4885-9f46-4e6c-b91a-e13030fb6427" LastKnownName="Clinic" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d3e8340f-c2bf-4f7a-a3f4-e19587250427" name="Registry" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="29105ae3-e96a-4eda-bc7a-70dd0c9fba37" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3ef6a957-cb64-4c79-9d0b-43734e1fdb63" name="Clinic" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="984e9e79-e8ec-462e-882e-de3fc8f91258" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4a226a90-1797-4db7-af9d-bd7bfb481d8e" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="607d3234-9371-4d65-953c-9c708d8812af" name="CheckInsurance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="99b7a5eb-1484-432b-a011-d7f2ef2f07bc" />
+          </operation>
+          <operation Id="825e45d7-6bc1-425d-b03b-ab72177140b5" name="StartTreatment" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6e236332-3778-4088-8dd3-cbcc9a5f1a4d" />
+          </operation>
+          <operation Id="fefb3339-3de0-4204-80e2-39c26516d2c0" name="GoDoctor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c2561449-7302-4175-82f3-8ebe8a1cb8e1" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="222d79e7-ac11-49bc-9491-e63af06cff81" name="ENT" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fed713b5-f1c7-44dc-8fe7-bfec6d18f5c1" />
+        <suppliersInternal>
+          <interfaceRealization Id="bba8e0d3-3384-4140-a554-34a2bd2764ba">
+            <interfaceMoniker Id="cb0af02b-f69a-484a-91d1-f247bb97d127" LastKnownName="Doctor" />
+            <elementDefinition Id="62e3efa2-cc71-4ab1-bd5b-55272971d97a" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="d197989f-4db5-44c7-90ce-1aeee17ff8a2" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="338d0953-c141-413e-ae47-fd3416e1de3f" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="fa248e3c-a65d-4db3-bbcf-3af3b33da4a6" name="StartTreatment" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="af7b16f5-14c1-46ed-8d90-9017a6f5d121" />
+          </operation>
+          <operation Id="11514a86-c9e0-4bb2-bbaf-c9d8e87b2458" name="TreatmentAlgorithm" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="06303132-44e7-4137-9290-6e13907fbd6f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c9542e1f-853e-45fe-a4f9-6e7cbb177501" name="Orthopedist" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7a12892e-65f1-43f3-989c-712a097be6a3" />
+        <suppliersInternal>
+          <interfaceRealization Id="bd3164ad-ec54-4ca0-84ef-27902c9b5f11">
+            <interfaceMoniker Id="cb0af02b-f69a-484a-91d1-f247bb97d127" LastKnownName="Doctor" />
+            <elementDefinition Id="5ca5dfe0-a6c3-4caa-b481-446c67eae05e" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="995da1e2-ce84-444d-aa8c-f49262759650" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="edfac866-67e6-407b-8a5f-de7f12b568a8" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="daf1189c-9969-4dc5-ba15-fe7b9bc45931" name="StartTreatment" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f516557d-f9ac-46f6-af21-c8ff4a4bc145" />
+          </operation>
+          <operation Id="5044abdf-d631-43bf-9235-cb279261a74d" name="TreatmentAlgorithm" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cf2a93bf-4ec8-4f0c-b28e-ea6f5dbcd70a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5108e98c-5aac-4b88-8eeb-edd8a2559292" name="Dentist" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0ca057da-8206-48a5-8903-df2b02c05448" />
+        <suppliersInternal>
+          <interfaceRealization Id="e922c023-d5fb-46d6-9281-e5a8953f1580">
+            <interfaceMoniker Id="cb0af02b-f69a-484a-91d1-f247bb97d127" LastKnownName="Doctor" />
+            <elementDefinition Id="a914bcf6-b5af-4145-93f9-0159e1b0ef67" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="51c120cd-d634-4933-939d-0338f5b9729a" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ac2ef880-fee1-44b2-a87d-92b4b716e589" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="049d29a1-c2d5-492a-b75d-e40ec61db430" name="StartTreatment" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d9535fd7-197d-486b-9f85-51e696729f3c" />
+          </operation>
+          <operation Id="e3137b03-d73d-4d30-8799-319eade7c0f2" name="TreatmentAlgorithm" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e8185217-193f-4ec3-adc9-7072985d6c56" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="cb0af02b-f69a-484a-91d1-f247bb97d127" name="Doctor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="363c08e5-0c0d-4300-97b2-87c0edb112e7" />
+        <targetEnds>
+          <association Id="10b38749-6a7a-4a10-ad0c-ebdbea95d88e" isDerived="false" sourceEndRoleName="Doctor" targetEndRoleName="Registry" isLeaf="false" isAbstract="false">
+            <classMoniker Id="42db6be5-52e0-4af5-8831-eb5fc740d142" LastKnownName="Registry" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="19804d92-227c-4978-82bc-0c035fe801b4" name="Doctor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="1ab51597-6f6b-46a7-93cb-d2a488e036fc" name="Lower" value="*">
+                      <elementDefinition Id="0d600915-36ec-4852-b8c6-f74c657d9785" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="dfca762f-b46b-4f78-ad6b-6d7b00a0a218" name="Upper" value="*">
+                      <elementDefinition Id="9c8a556b-0123-4c05-bd89-01d53f247b72" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="cc52c98a-4ea0-4aee-8757-0842f683803c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4e0b68d2-3ede-436a-ac98-ff54d7d41602" name="Registry" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="23a91335-46eb-4277-a07b-19a19b929326" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="807e966e-a6a4-40ec-81aa-45b64a3e298f" />
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property Id="dbdc19fa-3167-4a5f-be3d-66a79e8d0f94" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="755f51d8-02e7-4c8f-961f-9aed758f586f" />
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation Id="2df35494-c032-49ab-8635-4107610c84c1" name="StartTreatment" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="34ac5c0d-6992-4e4c-b6df-3609516df683" />
+          </operation>
+          <operation Id="66aa6364-b282-4555-9d9d-7cbd52516e7c" name="TreatmentAlgorithm" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="396472c7-51e8-4519-a9de-5e06f5ee6c63" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9b6f1c3c-ecf0-434a-97c8-0c19d9110e0a" name="Human" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4ce70275-a1e5-4e7e-a59a-b42eee475c11" />
+        <targetEnds>
+          <association Id="d15a4452-32ae-4e4a-b21c-7f1b59d9edf5" isDerived="false" sourceEndRoleName="Human" targetEndRoleName="Clinic" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="276b4885-9f46-4e6c-b91a-e13030fb6427" LastKnownName="Clinic" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9463aba2-9941-4c15-b81d-940a1edd108b" name="Human" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="a183d8f2-1e35-4e72-82dd-96bac039370c" name="Lower" value="*">
+                      <elementDefinition Id="f832001a-0f18-460f-aed2-b1d3b2c6d2e1" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="4c2dc441-da4b-449c-ac19-1ec4f9b5e199" name="Upper" value="*">
+                      <elementDefinition Id="1ed9c64f-c98a-4c59-b25a-bfd125b1a997" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="652b9e96-c970-4173-8173-13bb170f7de7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bc3464c7-8fc9-4438-998f-74688b6887ab" name="Clinic" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="0345fc98-4ef8-4488-97a4-e0d26f40c72f" name="Lower" value="*">
+                      <elementDefinition Id="c3f36e48-0546-46cf-9905-a259217d3a74" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d69d3456-82ab-4209-8e26-b08f94986630" name="Upper" value="*">
+                      <elementDefinition Id="c8b329a8-89c6-407c-8383-579e2980654f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="d67c0c86-a196-4761-9c09-920118c37bf6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e7ed08e0-c321-4932-9233-448092890b9c" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="66e10f03-9c14-4c82-91b4-57154682c1ce" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f911feca-6634-4417-bc2d-64b3e476580e" />
+          </property>
+          <property Id="0007743b-1cc2-426e-9ab7-364a100b8d1a" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b1713c99-2d7b-4c92-b87f-5a61209823c0" />
+          </property>
+          <property Id="cceff06d-11dd-48b4-9199-3aebafd449ba" name="NumInsurance" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cc3360f3-71f8-4857-904a-7503007edba3" />
+          </property>
+          <property Id="f77a9ed1-6593-45df-b20c-1bc502b2a74b" name="Phone" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0ff52e77-65f5-455d-b283-07d8ab3d333d" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="3d38c6c9-5567-44b1-ae52-07cb35935231" name="GoClinic" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e8304a64-48ba-45ca-99c2-cd2fdab6bb22" />
+          </operation>
+          <operation Id="c285c113-626f-48a7-9919-7b6927838648" name="DecideSomething" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b36629ab-b288-4bee-b4f4-70d5085e44c6" />
+          </operation>
+          <operation Id="cfcfd89e-2e3d-4acc-9135-d17f7201dde1" name="GetInsuranceAnsver()" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ffb5367c-6a18-4bd9-ab9a-47e91e9ebd41" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e7425c90-2dd3-498e-b68e-dd7c2e869b56" name="Insurance" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="97fe9f98-228d-4264-ad7a-485d31a6b895" />
+        <ownedAttributesInternal>
+          <property Id="3eab3a11-642f-4f49-90ce-485db92098e9" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="92b95e8f-077d-4da8-80ad-9586dbcf73f8" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="42b76f48-2686-4b0b-b855-d119dd6ffe13" name="GiveAnsver" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="75bcb450-5686-4145-b771-02d99dde63e5" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="866b6cd1-5b3e-445f-a57f-26bc5a05e8f3" name="ModelMyclinic">
+    <elementDefinition Id="547186e0-d82f-4475-9c0b-d49d9e77b887" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c326819d-2147-4998-9b37-73112ce6d638">
+        <profileInstance Id="19291a55-6c31-4a0c-9909-0d7775f908ea" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8e109d7a-b4fa-47aa-85e7-f41d199ea030">
+        <profileInstance Id="ec8d2def-8831-4985-a6c3-6a7b9f5c354e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

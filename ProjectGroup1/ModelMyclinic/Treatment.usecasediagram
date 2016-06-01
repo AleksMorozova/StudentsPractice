@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="5476c5ef-a5cc-4bfe-bf34-f4938d0687e2" name="Treatment" linkedPackageId="b84c0732-2bc3-48d6-9336-454aa6d11b5a" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="87258781-abed-4cbb-a346-07da762865e9" name="Human" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d425880e-b92c-4234-b8fa-7bf966640626" />
+        <targetEnds>
+          <association Id="46a7a417-300a-46cf-b088-88e0452b49bd" isDerived="false" sourceEndRoleName="Human" targetEndRoleName="Disease" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="75a5abd0-b34a-4814-a5a4-354d7413b33f" LastKnownName="Disease" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f8afb7fe-38ce-4a47-b2a0-9e69682f818f" name="Human" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="35d6ffaa-77fe-4b61-8eb2-e76f071d73f1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="642a35ed-827b-4487-a969-fd7ddfe4ab9e" name="Disease" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="941cde1f-49be-44c9-87f7-d1c3c60bdfe3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a98a9f21-2c99-4b9a-8ecc-8e74f80ab0a9" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="10048264-3bef-4f22-a2a9-1c259a86b406" name="Сlinic" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dcdb0ec6-3630-42fe-9674-899abd634eaa" />
+        <suppliersInternal>
+          <dependency Id="439ca9c6-e878-479b-a95b-1e40b43bd031">
+            <actorMoniker Id="1d634bb5-9cad-4845-9350-44afbfd3cb46" LastKnownName="Doctor" />
+            <elementDefinition Id="4f4e9b8c-7a4a-44e1-912d-51b8b01a4779" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="00442cf5-4919-42ef-9ede-81b3e527327c" name="Insurance" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b4cf6a13-5602-4eb5-baf4-70c9bfa508bd" />
+        <suppliersInternal>
+          <dependency Id="f4ab4f63-1ff8-4084-ad90-598188e28ffa">
+            <useCaseMoniker Id="90bc65b7-0e4f-4331-990a-2d94e13cd8a7" LastKnownName="Answer" />
+            <elementDefinition Id="428cfd04-00f0-41fb-85e1-4aba09018584" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="75a5abd0-b34a-4814-a5a4-354d7413b33f" name="Disease" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7eb4ad63-0b12-45ff-8146-dc57bdc4f393" />
+        <suppliersInternal>
+          <dependency Id="d2aaf5cf-5b3b-4c8f-a476-b504af0ae2ae">
+            <actorMoniker Id="10048264-3bef-4f22-a2a9-1c259a86b406" LastKnownName="Сlinic" />
+            <elementDefinition Id="c5620073-4cc2-4a42-92de-ee60145cf7de" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f0c4743b-e6dc-4636-8425-a472573c81a1" name="InsuranceVerification" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e67abfb1-0b9e-4ed7-87dd-e14cdb0f5140" />
+        <suppliersInternal>
+          <dependency Id="b0a72d7f-2632-4648-9506-3eacefae8b84">
+            <actorMoniker Id="00442cf5-4919-42ef-9ede-81b3e527327c" LastKnownName="Insurance" />
+            <elementDefinition Id="daef02ea-99d1-4930-b094-feeea5d86073" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="90bc65b7-0e4f-4331-990a-2d94e13cd8a7" name="Answer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5af0956e-50c1-46f1-ad11-ef9692b8da27" />
+        <suppliersInternal>
+          <dependency Id="79f2878e-8a7f-4ea3-80ed-37957e92a51f">
+            <actorMoniker Id="10048264-3bef-4f22-a2a9-1c259a86b406" LastKnownName="Сlinic" />
+            <elementDefinition Id="d94bf19c-1788-4fed-a1f0-1c28bcefccae" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="1d634bb5-9cad-4845-9350-44afbfd3cb46" name="Doctor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bd385224-34eb-4953-9ebc-ccc5daee8567" />
+        <suppliersInternal>
+          <dependency Id="ab2968d4-7013-4560-924d-82eada6ac402">
+            <useCaseMoniker Id="f0c4743b-e6dc-4636-8425-a472573c81a1" LastKnownName="InsuranceVerification" />
+            <elementDefinition Id="77e5516f-6799-4ff3-ae79-28a7ea5c6561" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="b84c0732-2bc3-48d6-9336-454aa6d11b5a" name="ModelMyclinic">
+    <elementDefinition Id="547186e0-d82f-4475-9c0b-d49d9e77b887" />
+    <profileInstances>
+      <packageHasProfileInstances Id="f952c1b1-6a7e-4c50-a00e-bf0fe72bf711">
+        <profileInstance Id="5f1d6bad-393d-4bd0-ab89-371d1c5552d6" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ef7eae5a-76ce-4973-9bae-461219c17247">
+        <profileInstance Id="75b7ffd3-814a-4788-9244-d2fdab64224d" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

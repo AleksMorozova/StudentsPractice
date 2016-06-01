@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="72c18b4b-9d0b-4682-ab5a-9e80cef82b43" name="Activity" linkedPackageId="e87816ef-3032-4684-87cf-7b96581c1c14" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="149cc976-879e-42be-89fb-7a993ca8c634">
+      <elementDefinition Id="521e8c38-cd49-4f0f-8bfd-78ce6a4efac5" />
+      <body>No
+</body>
+    </comment>
+    <comment Id="12a2b727-af94-4afd-886f-5b552f60ff4a">
+      <elementDefinition Id="17366528-5f5a-4304-ac40-e4ebd018d285" />
+      <body>Yes</body>
+    </comment>
+    <comment Id="67eebee7-7452-4ee3-add2-e4588d5d231d">
+      <elementDefinition Id="546b56ff-76e6-4e5c-8b41-00832bb1a1a9" />
+      <body>Treatment algorithm</body>
+    </comment>
+    <comment Id="0ceeee8e-d09b-4b31-9ab8-8d45ee5e2c59">
+      <elementDefinition Id="021f819b-7c55-4999-b5bb-2046ae0c8249" />
+      <body>Insurance</body>
+    </comment>
+    <comment Id="c67e06e6-738e-4c5e-b0f1-a59d3241866f">
+      <elementDefinition Id="83686661-9466-408d-8eaf-cf130870d1de" />
+      <body>Yes</body>
+    </comment>
+    <comment Id="2642cd55-2958-4331-9393-c0de6c21d34a">
+      <elementDefinition Id="1600de01-1268-4320-9607-aef95979dc20" />
+      <body>No
+</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="97b6ec45-633d-48c2-b7f7-853e8f838244" name="Activity" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="cc87e5d8-19b4-4b79-839c-f72ef385d5c0" />
+        <nodes>
+          <initialNode Id="3cc0937a-80fb-4437-a57e-d16eb32143a8" name="Initial1" isLeaf="false">
+            <elementDefinition Id="747c1989-61d1-48d4-a3fb-22ea5a38ef6c" />
+            <flowNodeTargets>
+              <controlFlow Id="bf37c574-7729-441c-965b-d7e002ac0d7b" isLeaf="false">
+                <opaqueActionMoniker Id="4a5f70d1-8e0d-4244-b844-a164dd74c929" LastKnownName="GoClinic" />
+                <elementDefinition Id="2b6ebb9c-5434-416a-aaf9-c20a1f103cb9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="4a5f70d1-8e0d-4244-b844-a164dd74c929" name="GoClinic" isLeaf="false">
+            <elementDefinition Id="a9072e42-7d10-44e3-b8ab-c4824776fb22" />
+            <flowNodeTargets>
+              <controlFlow Id="d35fd818-f484-470c-90cc-d38291bf33ae" isLeaf="false">
+                <decisionNodeMoniker Id="d65c85d6-e946-4bad-bc1f-ada10032af44" LastKnownName="Decision1" />
+                <elementDefinition Id="fe7698e3-2f66-4dc9-85e4-fc5535eef70e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="98259b2b-882f-4ed9-901f-97bb46b84890" name="GoDoctor" isLeaf="false">
+            <elementDefinition Id="eefebcc6-7ab5-44af-9a4d-45f249a22966" />
+            <flowNodeTargets>
+              <controlFlow Id="dfaf29cb-f51e-4de1-b3e8-379ac3e5bfaa" isLeaf="false">
+                <opaqueActionMoniker Id="bb24d61a-3736-4e4e-a0f5-9db176896c9b" LastKnownName="Treatment algorithm" />
+                <elementDefinition Id="f4de5e32-f8fd-46fb-bd2c-cedfa00e349b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="dfa3a00e-7d38-4ae9-a3ef-48f2b34720d4" name="CheckInsurance" isLeaf="false">
+            <elementDefinition Id="5124c4e6-324d-4ef6-9021-1ee6d2cd67f4" />
+            <flowNodeTargets>
+              <controlFlow Id="99ad5134-a527-4cef-a167-82fe1427b44b" isLeaf="false">
+                <opaqueActionMoniker Id="4a5f70d1-8e0d-4244-b844-a164dd74c929" LastKnownName="GoClinic" />
+                <elementDefinition Id="8476558f-8b22-405d-bdf2-c0335c2394e3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="d65c85d6-e946-4bad-bc1f-ada10032af44" name="Decision1" isLeaf="false">
+            <elementDefinition Id="cabdb0ad-c009-4f32-a674-138b183991bb" />
+            <flowNodeTargets>
+              <controlFlow Id="e40f1a71-7985-4c97-9ad2-710289312dd2" isLeaf="false">
+                <opaqueActionMoniker Id="98259b2b-882f-4ed9-901f-97bb46b84890" LastKnownName="GoDoctor" />
+                <elementDefinition Id="d43a89eb-561c-4a7a-b645-e8409e6e8cfa" />
+              </controlFlow>
+              <controlFlow Id="70e0ae55-e209-407d-b7dd-1bed57c92f71" isLeaf="false">
+                <decisionNodeMoniker Id="08058403-c4bf-4cc4-b22d-81d1151ddf17" LastKnownName="Decision2" />
+                <elementDefinition Id="e5402c1a-7235-436e-818b-3b700e4fd884" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="8377a66b-b663-480d-890a-82b0892ce7a3" name="Exit" isLeaf="false">
+            <elementDefinition Id="93b038d4-a7c8-4a7a-b98b-a207555a9562" />
+            <flowNodeTargets>
+              <controlFlow Id="a38aff0c-1483-4314-9d97-a1d35e4f4523" isLeaf="false">
+                <activityFinalNodeMoniker Id="8808009a-826b-428e-82d3-4c87a654242e" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="9955bd32-7865-41e4-8dbb-57b83a01e099" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="bb24d61a-3736-4e4e-a0f5-9db176896c9b" name="Treatment algorithm" isLeaf="false">
+            <elementDefinition Id="55e5ca0b-132d-450e-9821-14ab91b9ec99" />
+            <flowNodeTargets>
+              <controlFlow Id="f867844b-2c07-48b5-b695-cc843a26df1b" isLeaf="false">
+                <opaqueActionMoniker Id="dfa3a00e-7d38-4ae9-a3ef-48f2b34720d4" LastKnownName="CheckInsurance" />
+                <elementDefinition Id="3c6bf9a3-98b2-4065-b037-5404de6fbe08" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="8808009a-826b-428e-82d3-4c87a654242e" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="84dfcfe6-ea54-437a-bdb5-f475f47a0069" />
+          </activityFinalNode>
+          <opaqueAction Id="cb1fce09-cc27-4a95-b56c-cac05c47ec7b" name="Treatment" isLeaf="false">
+            <elementDefinition Id="8d3c764f-98a6-4c83-9580-098ec13600eb" />
+            <flowNodeTargets>
+              <controlFlow Id="908a3e3b-1dd2-4aff-aa39-f70e30fa1cbc" isLeaf="false">
+                <opaqueActionMoniker Id="8377a66b-b663-480d-890a-82b0892ce7a3" LastKnownName="Exit" />
+                <elementDefinition Id="a1a5330e-d5af-441e-b6ab-dda6db296bb4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="08058403-c4bf-4cc4-b22d-81d1151ddf17" name="Decision2" isLeaf="false">
+            <elementDefinition Id="be18b76b-b23f-46a0-9d7b-7fd430d9af33" />
+            <flowNodeTargets>
+              <controlFlow Id="821b1eab-3ddd-496e-9229-6f56e574eb34" isLeaf="false">
+                <opaqueActionMoniker Id="cb1fce09-cc27-4a95-b56c-cac05c47ec7b" LastKnownName="Treatment" />
+                <elementDefinition Id="ece2be2c-a83e-4002-ae5a-764f93e41a9e" />
+              </controlFlow>
+              <controlFlow Id="83b8c894-a20f-4cc1-b3e9-edd7dbf916ad" isLeaf="false">
+                <opaqueActionMoniker Id="8377a66b-b663-480d-890a-82b0892ce7a3" LastKnownName="Exit" />
+                <elementDefinition Id="5bdb6cb8-44a1-40f4-9556-7a285b77d034" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="e87816ef-3032-4684-87cf-7b96581c1c14" name="ModelMyclinic">
+    <elementDefinition Id="547186e0-d82f-4475-9c0b-d49d9e77b887" />
+    <profileInstances>
+      <packageHasProfileInstances Id="de0082a6-25ca-41e1-9fe7-779c0fd99da2">
+        <profileInstance Id="7a3d62ec-6532-4260-9bb2-869c8b81c9da" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="3d7da0db-a677-47e6-bcd9-84b22018ef4e">
+        <profileInstance Id="cafaa41b-adc1-45a2-8c23-9c393384d4b2" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>
