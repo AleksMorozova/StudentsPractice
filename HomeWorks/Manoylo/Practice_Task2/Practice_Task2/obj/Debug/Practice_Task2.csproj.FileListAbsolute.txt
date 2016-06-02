@@ -1,0 +1,6 @@
+c:\users\рома\documents\visual studio 2013\Projects\Practice_Task2\Practice_Task2\bin\Debug\Practice_Task2.exe.config
+c:\users\рома\documents\visual studio 2013\Projects\Practice_Task2\Practice_Task2\bin\Debug\Practice_Task2.exe
+c:\users\рома\documents\visual studio 2013\Projects\Practice_Task2\Practice_Task2\bin\Debug\Practice_Task2.pdb
+c:\users\рома\documents\visual studio 2013\Projects\Practice_Task2\Practice_Task2\obj\Debug\Practice_Task2.csprojResolveAssemblyReference.cache
+c:\users\рома\documents\visual studio 2013\Projects\Practice_Task2\Practice_Task2\obj\Debug\Practice_Task2.exe
+c:\users\рома\documents\visual studio 2013\Projects\Practice_Task2\Practice_Task2\obj\Debug\Practice_Task2.pdb
