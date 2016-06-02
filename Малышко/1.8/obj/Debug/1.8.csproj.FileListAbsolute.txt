@@ -1,0 +1,5 @@
+c:\users\azirel\documents\visual studio 2015\Projects\NewbeCode\1.8\bin\Debug\1.8.exe.config
+c:\users\azirel\documents\visual studio 2015\Projects\NewbeCode\1.8\bin\Debug\1.8.exe
+c:\users\azirel\documents\visual studio 2015\Projects\NewbeCode\1.8\bin\Debug\1.8.pdb
+c:\users\azirel\documents\visual studio 2015\Projects\NewbeCode\1.8\obj\Debug\1.8.exe
+c:\users\azirel\documents\visual studio 2015\Projects\NewbeCode\1.8\obj\Debug\1.8.pdb

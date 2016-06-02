@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _2._8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string corectPassword = "root";
+            while (Console.ReadLine() != corectPassword) { };
+            //delay
+            Console.ReadKey();
+        }
+    }
+}
