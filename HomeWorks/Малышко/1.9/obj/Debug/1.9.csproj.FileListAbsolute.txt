@@ -1,0 +1,6 @@
+c:\users\azirel\documents\visual studio 2015\Projects\NewbeCode\1.9\bin\Debug\1.9.exe.config
+c:\users\azirel\documents\visual studio 2015\Projects\NewbeCode\1.9\bin\Debug\1.9.exe
+c:\users\azirel\documents\visual studio 2015\Projects\NewbeCode\1.9\bin\Debug\1.9.pdb
+c:\users\azirel\documents\visual studio 2015\Projects\NewbeCode\1.9\obj\Debug\1.9.csprojResolveAssemblyReference.cache
+c:\users\azirel\documents\visual studio 2015\Projects\NewbeCode\1.9\obj\Debug\1.9.exe
+c:\users\azirel\documents\visual studio 2015\Projects\NewbeCode\1.9\obj\Debug\1.9.pdb
